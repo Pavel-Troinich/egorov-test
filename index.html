@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>LEAD Advisors</title>
+</head>
+<body>
+  <header class="header">
+    <a href="./index.html" class="logo">
+      <div>
+        <img class="logo__img" src="./assets/img/logo.png" alt="logo">
+      </div>
+    </a>
+    <img class="header__leftcorner" src="./assets/img/leftcorner.png" alt="leftcorner">
+    <img class="header__rightcorner" src="./assets/img/rightcorner.png" alt="rightcorner">
+  </header>
+  <main class="main">
+    <div class="content">
+      <h1 class="content__title">Under Construction</h1>
+      <p class="content__subtitle">We're making lots of improvements and will be back soon</p>
+    </div>
+    <div class="timer">
+      <div class="timer__item">
+        <div class="timer__days">00</div>
+        <div class="timer__label">
+          <img class="timer__label-img" src="./assets/img/timeitem.png" alt="timeitem">
+          <span class="timer__label-desktop">Days</span>
+          <span class="timer__label-mobile">DD</span>
+        </div>
+      </div>
+      <div class="timer__separator">:</div>
+      <div class="timer__item">
+        <div class="timer__hours">00</div>
+        <div class="timer__label">
+          <img class="timer__label-img" src="./assets/img/timeitem.png" alt="timeitem">
+          <span class="timer__label-desktop">Hours</span>
+          <span class="timer__label-mobile">00</span>
+        </div>
+      </div>
+      <div class="timer__separator">:</div>
+      <div class="timer__item">
+        <div class="timer__minutes">00</div>
+        <div class="timer__label">
+          <img class="timer__label-img" src="./assets/img/timeitem.png" alt="timeitem">
+          <span class="timer__label-desktop">Minutes</span>
+          <span class="timer__label-mobile">MM</span>
+        </div>
+      </div>
+      <div class="timer__separator">:</div>
+      <div class="timer__item">
+        <div class="timer__seconds">00</div>
+        <div class="timer__label">
+          <img class="timer__label-img" src="./assets/img/timeitem.png" alt="timeitem">
+          <span class="timer__label-desktop">Seconds</span>
+          <span class="timer__label-mobile">SS</span>
+        </div>
+      </div>
+    </div>
+    <div class="to-event">
+      <p class="to-event__txt">Check our event page when you wait:</p>
+      <a href="http://example.com/">
+        <button class="to-event__btn button">
+          <span>Go to the event</span>
+          <img src="./assets/img/arrow.png" alt="arrow">
+        </button>
+      </a>
+      
+    </div>
+  </main>
+  <div class="modal">
+    <div class="modal__content" onclick="event.stopPropagation()">
+      <img class="modal__close" src="./assets/img/cancelbtn.png" alt="cancelbtn">
+      <h2 class="modal__title"></h2>
+      <p class="modal__notice"></p>
+      <button class="modal__btn button">Close</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="subscription">
+      <input class="subscription__input" type="text" placeholder="Enter your Email and get notified">
+      <button class="subscription__btn">
+        <img src="./assets/img/arrow.png" alt="arrow">
+      </button>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
