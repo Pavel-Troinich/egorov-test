@@ -44,16 +44,19 @@ button:active {
   position: absolute;
   top: 0;
   left: 0;
+  animation: show-leftcorner 1.5s ease;
 }
 
 .header__rightcorner {
   position: absolute;
   top: 0;
   right: 0;
+  animation: show-rightcorner 1.5s ease;
 }
 
 .logo {
   display: flex;
+  animation: show 1.5s ease;
 }
 
 .main {
@@ -75,6 +78,7 @@ button:active {
   text-transform: uppercase;
   color: var(--main-color);
   opacity: .39;
+  animation: show-title 1.5s ease;
 }
 
 .content__subtitle,
@@ -88,6 +92,7 @@ button:active {
   width: 425px;
   margin: 0 auto;
   margin: 10px auto 0;
+  animation: show 1.5s ease;
 }
 
 .timer {
@@ -96,6 +101,7 @@ button:active {
   font-weight: 600;
   font-size: 4.5rem;
   color: var(--main-color);
+  animation: show 1.5s ease;
 }
 
 .timer__label {
@@ -121,6 +127,7 @@ button:active {
 
 .to-event {
   margin-bottom: 76px;
+  animation: show 1.5s ease;
 }
 
 .to-event__txt {
@@ -387,6 +394,58 @@ button:active {
   .to-event__txt {
     font-size: 1rem;
     margin-top: 18px;
+  }
+
+}
+
+@keyframes show-leftcorner {
+  from {
+    transform: translateY(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes show-rightcorner {
+  from {
+    transform: translateY(100%);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes show-title {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: .39;
+  }
+
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 
 }
