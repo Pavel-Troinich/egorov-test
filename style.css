@@ -225,6 +225,7 @@ button:active {
 .modal__title {
   font-size: 2.25rem;
   text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .modal__btn {
