@@ -68,6 +68,7 @@ function subscribe() {
 
 function closeModal() {
   modal.classList.remove('active');
+  subscriptionInput.value = '';
 }
 
 function validateEmail (email) {
